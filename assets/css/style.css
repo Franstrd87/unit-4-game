@@ -1,0 +1,18 @@
+body {
+    background-image: url("../images/background.jpg");
+    font-family: 'Cabin', sans-serif;
+}
+.background-color {
+    background-color: rgb(238, 255, 0);
+    border-bottom: 8px solid  rgb(238, 255, 0);
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+.cont2 {
+    background-color: rgb(255, 102, 0);
+    border-radius: 8px;
+}
+
+.card-header {
+    background-color: #f0ee83;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Second Game</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid bg-warning">
+            <div class="container cont2">
+              <h1 class="display-4"><strong>Calories Collector</strong></h1>
+              <ol>
+                  <li>You will be given a random number of calories at the start of the game.</li>
+                  <li>There are four junk foods below. By clicking on a food you will add a specific amount of calories to your total calories.</li>
+                  <li>The player wins if the total number of calories equals the number of calories needed to win. </li>
+                  <li>The value of each food is hidden from you until you click on it.</li>
+                  <li>Each time when the game starts, the game will change the values of each food.</li>
+              </ol>
+            </div>
+          </div>
+    </div>
+    <div class="container background-color">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="text-center">Calorie Goal</h3><h2 id="random-number" class="text-center"></h2>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-center">Wins </h3><h4 class="text-center" id="wins-number"> </h4>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-center">Losses </h3><h4 class="text-center" id="losses-number"> </h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-center">Pick Your Calories</h2>
+            </div>
+            <div class="card-body mx-auto">
+                <img id="waffle-pic" src="./assets/images/waffle.jpg" alt="waffle" height="100" width="100" class="img-thumbnail">
+                <img id="burrito-pic" src="./assets/images/burritos.jpg" alt="burritos" height="100" width="100" class="img-thumbnail">
+                <img id="pizza-pic" src="./assets/images/pizza.jpg" alt="pizza" height="100" width="100" class="img-thumbnail">
+                <img id="burger-pic" src="./assets/images/burger.jpg" alt="burger" height="100" width="100" class="img-thumbnail">
+            </div>
+        </div>
+
+        <div class="card total-cal">
+                <div class="card-header">
+                  <h2 class="text-center">Your Total Calories </h2>
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                      <h2 class="text-center" id="total-cal"></h2>
+                  </blockquote>
+                </div>
+              </div>
+    </div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./assets/javascript/game.js"></script>
+</body>
+</html>
